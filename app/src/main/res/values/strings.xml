@@ -10,9 +10,12 @@
     <string name="InfoBienvenida">MATE FACIL se creo con la finalidad de ayudar a resolver tus problemas de matemáticas de una forma sencilla, en esta aplicación podras ingresar los datos
     principales del problema.</string>
 
-    <string name="menu_home">Ecuaciones</string>
-    <string name="menu_gallery">Algebra</string>
-    <string name="menu_slideshow">Trigonometria</string>
+    <string name="menu_home">Ecuaciones Cuadraticas</string>
+    <string name="menu_gallery">Ecuaciones Lineales</string>
+    <string name="menu_slideshow">Teorema de pitagoras</string>
+    <string name="menu_opcion_4">Distancia entre dos puntos</string>
+    <string name="menu_opcion_5">Combinacion y Permutación</string>
+    <string name="menu_opcion_6">Area y Perimetro (Rectangulos)</string>
 
     <string name="home_second">Home Second</string>
 </resources>
