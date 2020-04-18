@@ -9,14 +9,14 @@
     tools:context=".segundo_grado">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_a"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textColor="#FFFFFF"
@@ -62,39 +62,39 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/et_b"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textColor="#fff"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/et_a" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/et_c"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textColor="#fff"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/et_b" />
 
-    <Button
-        android:id="@+id/button"
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnResolver"
         android:layout_width="143dp"
         android:layout_height="60dp"
         android:layout_marginStart="28dp"
@@ -103,11 +103,11 @@
         android:text="@string/btn_resolver"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintStart_toEndOf="@+id/et_a"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
-    <Button
-        android:id="@+id/button2"
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLimpiar"
         android:layout_width="138dp"
         android:layout_height="59dp"
         android:layout_marginStart="28dp"
@@ -116,20 +116,20 @@
         android:text="@string/btn_limpiar"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/et_b"
+        app:layout_constraintTop_toBottomOf="@+id/btnResolver" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="80dp"
         android:text="@string/grad_x2"
         android:textColor="#365F91"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/tv_x1"
+        app:layout_constraintTop_toBottomOf="@+id/btnLimpiar" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -178,27 +178,31 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="65dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="46dp"
+        android:id="@+id/tv_x1"
+        android:layout_width="118dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/tv_personalizado"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
         android:textColor="#FFF"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/et_c" />
 
     <TextView
-        android:id="@+id/textView14"
-        android:layout_width="65dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="84dp"
+        android:id="@+id/tv_x2"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/tv_personalizado"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
         android:textColor="#FFF"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLimpiar" />
 
 </android.support.constraint.ConstraintLayout>
