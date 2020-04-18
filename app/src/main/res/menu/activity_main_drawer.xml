@@ -4,29 +4,33 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+        <!--android:icon="@android:drawable/ic_menu_more"-->
         <item
-            android:id="@+id/nav_home"
-            android:icon="@android:drawable/ic_menu_more"
+            android:id="@+id/nav_seg_grado"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@android:drawable/ic_menu_more"
+            android:id="@+id/nav_lineales"
             android:title="@string/menu_gallery" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@android:drawable/ic_menu_more"
+            android:id="@+id/nav_pitagoras"
             android:title="@string/menu_slideshow" />
         <item
-            android:id="@+id/opcion4"
-            android:icon="@android:drawable/ic_menu_more"
+            android:id="@+id/nav_puntos"
             android:title="@string/menu_opcion_4" />
         <item
-            android:id="@+id/opcion5"
-            android:icon="@android:drawable/ic_menu_more"
+            android:id="@+id/nav_combinacion"
             android:title="@string/menu_opcion_5" />
         <item
-            android:id="@+id/opcion6"
-            android:icon="@android:drawable/ic_menu_more"
+            android:id="@+id/nav_rectangulos"
             android:title="@string/menu_opcion_6" />
+        <item
+            android:id="@+id/nav_rombo"
+            android:title="@string/menu_opcion_rombo" />
+        <item
+            android:id="@+id/nav_circulo"
+            android:title="@string/menu_opcion_circulo" />
+        <item
+            android:id="@+id/nav_acerca"
+            android:title="@string/menu_acerca_de" />
     </group>
 </menu>

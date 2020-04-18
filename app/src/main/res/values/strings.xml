@@ -8,14 +8,107 @@
     <string name="action_info">Acerca de..</string>
     <string name="Bienvenida">Bienvenido</string>
     <string name="InfoBienvenida">MATE FACIL se creo con la finalidad de ayudar a resolver tus problemas de matemáticas de una forma sencilla, en esta aplicación podras ingresar los datos
-    principales del problema.</string>
+    principales del problema y de forma sencilla y rápida prodrás ver la respuesta a tu problema.</string>
 
     <string name="menu_home">Ecuaciones Cuadraticas</string>
     <string name="menu_gallery">Ecuaciones Lineales</string>
     <string name="menu_slideshow">Teorema de pitagoras</string>
     <string name="menu_opcion_4">Distancia entre dos puntos</string>
     <string name="menu_opcion_5">Combinacion y Permutación</string>
-    <string name="menu_opcion_6">Area y Perimetro (Rectangulos)</string>
+    <string name="menu_opcion_6">Area y Perimetro (Rectangulo)</string>
+    <string name="menu_opcion_circulo">Area y Perímetro (Circulo)</string>
+    <string name="menu_opcion_rombo">Area y Perímetro (Rombo)</string>
+    <string name="menu_acerca_de">Acerca de</string>
 
     <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Fragment ecuaciones de segundo grado-->
+    <string name="grad_titulo">Ecuaciones de segundo grado</string>
+    <string name="grad_expresion">Expresion general</string>
+    <string name="grad_info">Se debe considerar que a debe ser diferente de 0.</string>
+    <string name="grad_x1">x1: </string>
+    <string name="grad_x2">x2: </string>
+    <string name="btn_resolver">Resolver</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="grad_a">a: </string>
+    <string name="grad_b">b: </string>
+    <string name="grad_c">c: </string>
+
+    <!--Ecuaciones lineales-->
+    <string name="lin_titulo">Ecuaciones lineales 2x2</string>
+    <string name="lin_info">Los sistemas de ecuaciones lineales 2x2 son aquellas que se componen
+    de dos ecuaciones con dos incógnitas.</string>
+    <string name="lin_ecuacion">x + y = n</string>
+    <string name="lin_x1">x +</string>
+    <string name="lin_y1">y</string>
+    <string name="lin_igual">=</string>
+    <string name="lin_x">x = </string>
+    <string name="lin_y">y = </string>
+
+    <!--Teorema de pitagoras-->
+    <string name="pit_titulo">Teorema de Pitágoras</string>
+    <string name="pit_info">La longitud de la hipótenusa es igual a la raíz cuadrada de la suma de los
+    catetos al cuadrado.</string>
+    <string name="pit_marcar">Marca la casilla de la variable que desconoces</string>
+    <string name="pit_a">a</string>
+    <string name="pit_b">b</string>
+    <string name="pit_c">c</string>
+    <string name="pit_res">a/b/c: </string>
+
+    <!--Distancia entre dos puntos-->
+    <string name="dist_titulo">Distancia entre dos puntos</string>
+    <string name="dist_expresion">Expresión general</string>
+    <string name="dist_x1">x1</string>
+    <string name="dist_x2">x2</string>
+    <string name="dist_y1">y1</string>
+    <string name="dist_y2">y2</string>
+    <string name="dist_res_puntos">Distancia entre puntos: </string>
+    <string name="dist_pendiente">Pendiente</string>
+
+    <!--Combinación y permutación-->
+    <string name="comb_titulo">Combinación y Permutación</string>
+    <string name="comb_inf">Donde n es el número total de objetos. \nDonde r es el numero de objetos de la razón.</string>
+    <string name="comb_marcar">Marca la casilla del problema que deseas resolver</string>
+    <string name="comb_n">n</string>
+    <string name="comb_r">r</string>
+    <string name="comb_C">C</string>
+    <string name="comb_P">P</string>
+    <string name="comb_res">El número de combinaciones/permutaciones es: </string>
+
+    <!--Área y perímetro (Rectangulos)-->
+    <string name="rect_titulo">Rectangulo</string>
+    <string name="rect_area">Área</string>
+    <string name="rect_form_area">Base x Altura</string>
+    <string name="rect_perimetro">Perímetro</string>
+    <string name="rect_form_perimetro">Lado1 + Lado2 + Lado3 + Lado4</string>
+    <string name="rect_lado1">Lado 1</string>
+    <string name="rect_lado2">Lado 2</string>
+    <string name="rect_res_area">Área (cm^2):</string>
+    <string name="rect_res_perimetro">Perímetro (cm):</string>
+
+    <!--Área y perímetro (Rombo)-->
+    <string name="rombo_titulo">Rombo</string>
+    <string name="rombo_area">Área</string>
+    <string name="rombo_diagonal1">Diagonal 1</string>
+    <string name="rombo_diagonal2">Diagonal 2</string>
+    <string name="rombo_res_area">Área (cm^2):</string>
+    <string name="rombo_res_perimetro">Perímetro (cm):</string>
+
+    <!--Área y perímetro (Circulo)-->
+    <string name="circ_titulo">Rectangulo</string>
+    <string name="circ_area">Área</string>
+    <string name="circ_perimetro">Perímetro</string>
+    <string name="circ_radio">Radio</string>
+    <string name="circ_res_area">Área (cm^2):</string>
+    <string name="circ_res_perimetro">Perímetro (cm):</string>
+
+    <!--Acerca de-->
+    <string name="acerca_titulo">MATE FACIL</string>
+    <string name="acerca_info">Versión 1.0.0\n Desarrollado por: DGHV</string>
+    <string name="acerca_contacto">Contacto</string>
+    <string name="acerca_correo">dghv@gmail.com</string>
+    <string name="acerca_valora">Valora la app</string>
 </resources>
