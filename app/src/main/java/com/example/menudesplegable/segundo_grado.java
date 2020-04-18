@@ -73,6 +73,8 @@ public class segundo_grado extends Fragment
                 ed_a.setText("");
                 ed_b.setText("");
                 ed_c.setText("");
+                tv_x1.setText("");
+                tv_x2.setText("");
             }
         });
 

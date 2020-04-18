@@ -1,8 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#93C572"
-    tools:context=".combinacion" />
+    tools:context=".combinacion" >
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/comb_titulo"
+        android:textColor="#365F91"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tv_personalizado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/et_personalizado"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/et_personalizado"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/et_personalizado"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView48"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/et_personalizado"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView51"
+        app:layout_constraintTop_toBottomOf="@+id/editText16" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_personalizado"
+        android:text="@string/btn_resolver"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_personalizado"
+        android:text="@string/btn_limpiar"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="315dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/comb_inf"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="281dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/comb_marcar"
+        android:textColor="#365F91"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:text="@string/comb_n"
+        android:textColor="#365F91"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:text="@string/comb_r"
+        android:textColor="#365F91"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/textView47"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="297dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/comb_res"
+        android:textColor="#365F91"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/comb_C"
+        android:textColor="#365F91"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/comb_P"
+        android:textColor="#365F91"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/editText15"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="38dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="58dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

@@ -66,7 +66,7 @@
     <string name="dist_y1">y1</string>
     <string name="dist_y2">y2</string>
     <string name="dist_res_puntos">Distancia entre puntos: </string>
-    <string name="dist_pendiente">Pendiente</string>
+    <string name="dist_pendiente">Pendiente: </string>
 
     <!--Combinación y permutación-->
     <string name="comb_titulo">Combinación y Permutación</string>
@@ -92,8 +92,8 @@
     <!--Área y perímetro (Rombo)-->
     <string name="rombo_titulo">Rombo</string>
     <string name="rombo_area">Área</string>
-    <string name="rombo_diagonal1">Diagonal 1</string>
-    <string name="rombo_diagonal2">Diagonal 2</string>
+    <string name="rombo_diagonal1">Diagonal1</string>
+    <string name="rombo_diagonal2">Diagonal2</string>
     <string name="rombo_res_area">Área (cm^2):</string>
     <string name="rombo_res_perimetro">Perímetro (cm):</string>
 
@@ -107,8 +107,8 @@
 
     <!--Acerca de-->
     <string name="acerca_titulo">MATE FACIL</string>
-    <string name="acerca_info">Versión 1.0.0\n Desarrollado por: DGHV</string>
-    <string name="acerca_contacto">Contacto</string>
+    <string name="acerca_info">Versión 1.0.0\nDesarrollado por: DGHV</string>
+    <string name="acerca_contacto">Contacto: </string>
     <string name="acerca_correo">dghv@gmail.com</string>
     <string name="acerca_valora">Valora la app</string>
 </resources>
