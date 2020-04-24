@@ -22,17 +22,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/comb_tvRes"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/tv_personalizado"
+        android:textColor="#FFF"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+        app:layout_constraintTop_toBottomOf="@+id/comb_tvSalida" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/comb_et_nC"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="6dp"
@@ -48,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
     <EditText
-        android:id="@+id/editText15"
+        android:id="@+id/comb_et_nP"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="6dp"
@@ -61,10 +63,10 @@
         android:textColor="#fff"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/radioGroup2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/comb_et_nC" />
 
     <EditText
-        android:id="@+id/editText16"
+        android:id="@+id/comb_et_rC"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="22dp"
@@ -80,7 +82,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
     <EditText
-        android:id="@+id/editText17"
+        android:id="@+id/comb_et_rP"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="22dp"
@@ -93,10 +95,10 @@
         android:textColor="#fff"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/textView51"
-        app:layout_constraintTop_toBottomOf="@+id/editText16" />
+        app:layout_constraintTop_toBottomOf="@+id/comb_et_rC" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/comb_btnResolver"
         android:layout_width="112dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -106,10 +108,10 @@
         android:textColor="#fff"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+        app:layout_constraintTop_toBottomOf="@+id/comb_tvRes" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/comb_btnLimpiar"
         android:layout_width="112dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
@@ -118,8 +120,8 @@
         android:text="@string/btn_limpiar"
         android:textColor="#fff"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/button10"
-        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+        app:layout_constraintStart_toEndOf="@+id/comb_btnResolver"
+        app:layout_constraintTop_toBottomOf="@+id/comb_tvRes" />
 
     <TextView
         android:id="@+id/textView37"
@@ -168,7 +170,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
     <TextView
-        android:id="@+id/textView49"
+        android:id="@+id/comb_tvSalida"
         android:layout_width="297dp"
         android:layout_height="52dp"
         android:layout_marginStart="24dp"
@@ -188,7 +190,7 @@
         android:text="@string/comb_C"
         android:textColor="#365F91"
         android:textSize="36sp"
-        app:layout_constraintStart_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toEndOf="@+id/comb_et_nC"
         app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
     <TextView
@@ -200,7 +202,7 @@
         android:text="@string/comb_P"
         android:textColor="#365F91"
         android:textSize="36sp"
-        app:layout_constraintStart_toEndOf="@+id/editText15"
+        app:layout_constraintStart_toEndOf="@+id/comb_et_nP"
         app:layout_constraintTop_toBottomOf="@+id/textView48" />
 
     <RadioGroup
@@ -213,12 +215,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView38">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/comb_rbComb"
             android:layout_width="match_parent"
             android:layout_height="58dp" />
 
         <RadioButton
-            android:id="@+id/radioButton7"
+            android:id="@+id/comb_rbPer"
             android:layout_width="match_parent"
             android:layout_height="54dp" />
     </RadioGroup>

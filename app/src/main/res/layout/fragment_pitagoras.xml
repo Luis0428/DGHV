@@ -44,23 +44,23 @@
         app:layout_constraintTop_toBottomOf="@+id/textView24">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/pit_rbA"
             android:layout_width="match_parent"
             android:layout_height="60dp" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/pit_rbB"
             android:layout_width="match_parent"
             android:layout_height="67dp" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/pit_rbC"
             android:layout_width="match_parent"
             android:layout_height="58dp" />
     </RadioGroup>
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/pit_etA"
         android:layout_width="144dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -68,7 +68,7 @@
         android:ems="10"
         android:hint="@string/pit_a"
         android:inputType="numberDecimal"
-        android:paddingStart="100dp"
+        android:paddingStart="30dp"
         android:paddingEnd="10dp"
         android:textColor="#fff"
         android:textColorHint="#95B3D7"
@@ -77,7 +77,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/pit_etB"
         android:layout_width="144dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
@@ -85,16 +85,16 @@
         android:ems="10"
         android:hint="@string/pit_b"
         android:inputType="numberDecimal"
-        android:paddingStart="100dp"
+        android:paddingStart="30dp"
         android:paddingEnd="10dp"
         android:textColor="#fff"
         android:textColorHint="#95B3D7"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/pit_etA" />
 
     <EditText
-        android:id="@+id/editText12"
+        android:id="@+id/pit_etC"
         android:layout_width="144dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -102,13 +102,13 @@
         android:ems="10"
         android:hint="@string/pit_c"
         android:inputType="numberDecimal"
-        android:paddingStart="100dp"
+        android:paddingStart="30dp"
         android:paddingEnd="10dp"
         android:textColor="#fff"
         android:textColorHint="#95B3D7"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintTop_toBottomOf="@+id/pit_etB" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -117,11 +117,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/pitagoras"
-        app:layout_constraintStart_toEndOf="@+id/editText6"
+        app:layout_constraintStart_toEndOf="@+id/pit_etB"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/pit_tvSalida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -130,20 +130,22 @@
         android:textColor="#4F81BD"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText12" />
+        app:layout_constraintTop_toBottomOf="@+id/pit_etC" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/pit_tvRes"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="18dp"
         android:background="@drawable/tv_personalizado"
-        app:layout_constraintStart_toEndOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/editText12" />
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/pit_tvSalida"
+        app:layout_constraintTop_toBottomOf="@+id/pit_etC" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/pit_btnResolver"
         android:layout_width="113dp"
         android:layout_height="50dp"
         android:layout_marginStart="52dp"
@@ -153,10 +155,10 @@
         android:textColor="#fff"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        app:layout_constraintTop_toBottomOf="@+id/pit_tvRes" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/pit_btnLimpiar"
         android:layout_width="113dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
@@ -165,6 +167,6 @@
         android:text="@string/btn_limpiar"
         android:textColor="#fff"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        app:layout_constraintStart_toEndOf="@+id/pit_btnResolver"
+        app:layout_constraintTop_toBottomOf="@+id/pit_tvRes" />
 </android.support.constraint.ConstraintLayout>
