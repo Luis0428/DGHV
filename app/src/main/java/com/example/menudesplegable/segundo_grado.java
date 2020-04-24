@@ -1,6 +1,7 @@
 package com.example.menudesplegable;
 
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,34 +36,50 @@ public class segundo_grado extends Fragment
             @Override
             public void onClick(View v)
             {
-                float a = Float.parseFloat(ed_a.getText().toString());
-                float b = Float.parseFloat(ed_b.getText().toString());
-                float c = Float.parseFloat(ed_c.getText().toString());
-
-                float sqrt, x1, x2, tmp;
-                tmp = (b * b) - (4 * a * c);
-                if(tmp > 0)
+                if(validarCampos())
                 {
-                    sqrt = (float) Math.sqrt(tmp);
-                    x1 = (float) ((-b + sqrt) / (2 * a));
-                    x2 = (float) ((-b - sqrt) / (2 * a));
+                    float a = Float.parseFloat(ed_a.getText().toString());
+                    float b = Float.parseFloat(ed_b.getText().toString());
+                    float c = Float.parseFloat(ed_c.getText().toString());
 
-                    tv_x1.setText(String.valueOf(x1));
-                    tv_x2.setText(String.valueOf(x2));
-                }
-                else
-                {
-                    sqrt = (float) Math.sqrt(-tmp);
-                    sqrt = sqrt / (2 * a);
-                    x1 = (-b) / 2 * a;
-                    String real = (x1 == 0) ? "" : String.valueOf(x1);
-                    String img1 = (sqrt == 1) ? "i" : " + " + String.valueOf(sqrt) + "i";
-                    String img2 = (sqrt == 1) ? "-i" : " - " + String.valueOf(sqrt) + "i";
+                    float sqrt, x1, x2, tmp;
+                    tmp = (b * b) - (4 * a * c);
 
-                    String m1 = real + img1;
-                    String m2 = real + img2;
-                    tv_x1.setText(m1);
-                    tv_x2.setText(m2);
+                    String r1, r2, tmpImg1, tmpImg2;
+                    if(tmp > 0)
+                    {
+                        sqrt = (float) Math.sqrt(tmp);
+                        x1 = (float) ((-b + sqrt) / (2 * a));
+                        x2 = (float) ((-b - sqrt) / (2 * a));
+
+                        r1 = (x1 == 0) ? "" : String.valueOf(x1);
+                        r2 = (x2 == 0) ? "" : String.valueOf(x2);
+
+                        r1 = (r1.length() > 8) ? r1.substring(0, 8) : r1;
+                        r2 = (r2.length() > 8) ? r2.substring(0, 8) : r2;
+
+                        tv_x1.setText(r1);
+                        tv_x2.setText(r2);
+                    }
+                    else
+                    {
+                        sqrt = (float) Math.sqrt(-tmp);
+                        sqrt = sqrt / (2 * a);
+                        x1 = (-b) / 2 * a;
+
+                        r1 = (x1 == 0) ? "" : String.valueOf(x1);
+                        tmpImg1 = (sqrt == 1) ? "+i" : " + " + String.valueOf(sqrt) + "i";
+                        tmpImg2 = (sqrt == 1) ? "-i" : " - " + String.valueOf(sqrt) + "i";
+
+                        String real = (r1.length() > 8) ? r1.substring(0, 8) : r1;
+                        String img1 = (tmpImg1.length() > 8) ? tmpImg1.substring(0, 8) + "i" : tmpImg1;
+                        String img2 = (tmpImg2.length() > 8) ? tmpImg2.substring(0, 8) + "i" : tmpImg2;
+
+                        String m1 = real + img1;
+                        String m2 = real + img2;
+                        tv_x1.setText(m1);
+                        tv_x2.setText(m2);
+                    }
                 }
             }
         });
@@ -81,40 +98,20 @@ public class segundo_grado extends Fragment
         return vista;
     }
 
-    public void mResolver(View view)
+    private boolean validarCampos()
     {
-        float a = Float.parseFloat(ed_a.getText().toString());
-        float b = Float.parseFloat(ed_b.getText().toString());
-        float c = Float.parseFloat(ed_c.getText().toString());
-
-        float sqrt, x1, x2, tmp;
-        tmp = (b * b) - (4 * a * c);
-        if(tmp < 0)
+        if(ed_a.getText().toString().equals("") || ed_b.getText().toString().equals("") || ed_c.getText().toString().equals(""))
         {
-            sqrt = (float) Math.sqrt(tmp);
-            x1 = (float) ((-b + sqrt) / (2 * a));
-            x2 = (float) ((-b - sqrt) / (2 * a));
-
-            tv_x1.setText(String.valueOf(x1));
-            tv_x2.setText(String.valueOf(x2));
+            Snackbar.make(getView(),"No se han llenado algunos campos.", Snackbar.LENGTH_LONG).show();
+            return false;
         }
-        else
+        else if(Float.parseFloat(ed_a.getText().toString()) == 0f)
         {
-            sqrt = (float) Math.sqrt(-tmp);
-            sqrt = sqrt / (2 * a);
-            x1 = (-b) / 2 * a;
-            String m1 = String.valueOf(x1) + " + " + String.valueOf(sqrt) + "i";
-            String m2 = String.valueOf(x1) + " - " + String.valueOf(sqrt) + "i";
-            tv_x1.setText(m1);
-            tv_x2.setText(m2);
+            Snackbar.make(getView(),"a debe de ser distinto a 0.", Snackbar.LENGTH_LONG).show();
+            return false;
         }
+        else return true;
 
-    }
 
-    public void mLimpiar(View view)
-    {
-        ed_a.setText("");
-        ed_b.setText("");
-        ed_c.setText("");
     }
 }
