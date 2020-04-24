@@ -31,7 +31,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText19" />
+        app:layout_constraintTop_toBottomOf="@+id/dist_ety1" />
 
     <TextView
         android:id="@+id/textView29"
@@ -43,7 +43,7 @@
         android:textColor="#365F91"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintTop_toBottomOf="@+id/dist_tvPuntos" />
 
     <TextView
         android:id="@+id/textView14"
@@ -69,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/dist_etx1"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -87,32 +87,32 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <EditText
-        android:id="@+id/editText18"
+        android:id="@+id/dist_etx2"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:hint="@string/dist_x1"
+        android:hint="@string/dist_x2"
         android:inputType="numberSigned"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textColor="#fff"
         android:textColorHint="#4F81BD"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintStart_toEndOf="@+id/dist_etx1"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <EditText
-        android:id="@+id/editText19"
+        android:id="@+id/dist_ety1"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:hint="@string/dist_x1"
+        android:hint="@string/dist_y1"
         android:inputType="numberSigned"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -120,47 +120,51 @@
         android:textColorHint="#4F81BD"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/dist_etx1" />
 
     <EditText
-        android:id="@+id/editText20"
+        android:id="@+id/dist_ety2"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:hint="@string/dist_x1"
+        android:hint="@string/dist_y2"
         android:inputType="numberSigned"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textColor="#fff"
         android:textColorHint="#4F81BD"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/editText19"
-        app:layout_constraintTop_toBottomOf="@+id/editText18" />
+        app:layout_constraintStart_toEndOf="@+id/dist_ety1"
+        app:layout_constraintTop_toBottomOf="@+id/dist_etx2" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/dist_tvPuntos"
         android:layout_width="288dp"
         android:layout_height="39dp"
         android:background="@drawable/tv_personalizado"
+        android:textColor="#FFF"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <TextView
-        android:id="@+id/textView30"
-        android:layout_width="150dp"
+        android:id="@+id/dist_tvPendiente"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/tv_personalizado"
+        android:textColor="#FFF"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/textView29"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintTop_toBottomOf="@+id/dist_tvPuntos" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/dist_btnResolver"
         android:layout_width="112dp"
         android:layout_height="50dp"
         android:layout_marginStart="36dp"
@@ -173,7 +177,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/dist_btnLimpiar"
         android:layout_width="112dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -182,6 +186,6 @@
         android:text="@string/btn_limpiar"
         android:textColor="#fff"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/dist_btnResolver"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 </android.support.constraint.ConstraintLayout>
