@@ -104,6 +104,7 @@
     <string name="circ_radio">Radio</string>
     <string name="circ_res_area">Área (cm^2):</string>
     <string name="circ_res_perimetro">Perímetro (cm):</string>
+    <string name="txt_Radio">Radio (r)</string>
 
     <!--Acerca de-->
     <string name="acerca_titulo">MATE FACIL</string>

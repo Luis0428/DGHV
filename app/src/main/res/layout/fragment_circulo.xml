@@ -59,8 +59,8 @@
         android:id="@+id/textView54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
         android:text="@string/rect_res_area"
         android:textColor="#365F91"
         android:textSize="24sp"
@@ -110,32 +110,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/et_personalizado"
-        android:ems="10"
-        android:hint="@string/rect_lado1"
-        android:inputType="numberSigned"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:textColor="#fff"
-        android:textColorHint="#95B3D7"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView53" />
-
-    <EditText
         android:id="@+id/editText21"
         android:layout_width="140dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="72dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:hint="@string/rect_lado2"
+        android:hint="@string/txt_Radio"
         android:inputType="numberSigned"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -143,7 +125,7 @@
         android:textColorHint="#95B3D7"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
     <Button
         android:id="@+id/button12"
@@ -175,9 +157,9 @@
         android:id="@+id/imageView5"
         android:layout_width="187dp"
         android:layout_height="210dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/circulo"
-        app:layout_constraintStart_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toEndOf="@+id/editText21"
         app:layout_constraintTop_toBottomOf="@+id/textView53" />
 </android.support.constraint.ConstraintLayout>
