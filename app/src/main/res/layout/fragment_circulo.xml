@@ -95,6 +95,9 @@
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textAlignment="center"
         android:background="@drawable/tv_personalizado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView54" />
@@ -105,6 +108,9 @@
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textAlignment="center"
         android:background="@drawable/tv_personalizado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView55" />
