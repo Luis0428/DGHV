@@ -33,14 +33,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -57,6 +49,17 @@ public class MainActivity extends AppCompatActivity
         navView = findViewById(R.id.nav_view);
         frameLayout = findViewById(R.id.nav_host_fragment);
 
+
+        final FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                frameLayout.removeAllViews();
+                Fragment Co = new Ayuda();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, Co).commit();
+                fab.hide();
+            }
+        });
         // Cambiar ventanas
         navView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
@@ -109,7 +112,7 @@ public class MainActivity extends AppCompatActivity
                         if(fragmentTrans)
                         {
                             frameLayout.removeAllViews();
-
+                            fab.show();
                             getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, frag).commit();
                             menuItem.setChecked(true);
                             getSupportActionBar().setTitle(menuItem.getTitle());
