@@ -106,6 +106,13 @@
     <string name="circ_res_perimetro">Perímetro (cm):</string>
     <string name="txt_Radio">Radio (r)</string>
     <string name="txt_ciruculo">Circulo</string>
+    <!--Texto del Centro de ayuda-->
+    <string name="Titulo_Ayuda">Centro de ayuda</string>
+    <string name="correo_cliente">Introduce tu correo personal</string>
+    <string name="Mensaje_titulo">Escribe tu duda sobre el tema</string>
+    <string name="Mensaje_hint">Escribe en este apartado</string>
+    <string name="btn_enviarCorreo">Enviar</string>
+    <string name="btn_LimpiarMensaje">Limpiar</string>
 
     <!--Acerca de-->
     <string name="acerca_titulo">MATE FACIL</string>
