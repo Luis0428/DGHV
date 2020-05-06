@@ -65,11 +65,11 @@ public class segundo_grado extends Fragment
                     {
                         sqrt = (float) Math.sqrt(-tmp);
                         sqrt = sqrt / (2 * a);
-                        x1 = (-b) / 2 * a;
+                        x1 = (-b) / (2 * a);
 
                         r1 = (x1 == 0) ? "" : String.valueOf(x1);
-                        tmpImg1 = (sqrt == 1) ? "+i" : " + " + String.valueOf(sqrt) + "i";
-                        tmpImg2 = (sqrt == 1) ? "-i" : " - " + String.valueOf(sqrt) + "i";
+                        tmpImg1 = (sqrt == 0) ? "" : (sqrt == 1) ? "+i" : " + " + String.valueOf(sqrt) + "i";
+                        tmpImg2 = (sqrt == 0) ? "" : (sqrt == 1) ? "-i" : " - " + String.valueOf(sqrt) + "i";
 
                         String real = (r1.length() > 8) ? r1.substring(0, 8) : r1;
                         String img1 = (tmpImg1.length() > 8) ? tmpImg1.substring(0, 8) + "i" : tmpImg1;
