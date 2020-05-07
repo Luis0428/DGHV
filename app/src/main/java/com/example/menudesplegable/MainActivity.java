@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.NavigationView;
 
 import androidx.navigation.NavController;
@@ -27,9 +26,11 @@ public class MainActivity extends AppCompatActivity
     private AppBarConfiguration mAppBarConfiguration;
     private NavigationView navView; // items
     private FrameLayout frameLayout; // ventana principal
+    //private MenuItem itAcerca;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -49,7 +50,8 @@ public class MainActivity extends AppCompatActivity
 
         navView = findViewById(R.id.nav_view);
         frameLayout = findViewById(R.id.nav_host_fragment);
-
+        //itAcerca = findViewById(R.id.action_settings);
+        getSupportActionBar().setTitle("MATE FÁCIL");
 
         final FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -113,9 +115,10 @@ public class MainActivity extends AppCompatActivity
                         if(fragmentTrans)
                         {
                             frameLayout.removeAllViews();
-                            fab.show();
                             getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, frag).commit();
                             menuItem.setChecked(true);
+                            fab.show();
+                            navView
                             getSupportActionBar().setTitle(menuItem.getTitle());
                         }
 
@@ -123,6 +126,7 @@ public class MainActivity extends AppCompatActivity
                     }
                 }
         );
+
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
@@ -130,6 +134,21 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+        menu.getItem(0).setOnMenuItemClickListener(
+                new MenuItem.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item)
+                    {
+                        Fragment frag = new acerca();
+                        frameLayout.removeAllViews();
+                        //fab.hide();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, frag).commit();
+                        getSupportActionBar().setTitle("Acerca de");
+
+                        return true;
+                    }
+                }
+        );
         return true;
     }
 
