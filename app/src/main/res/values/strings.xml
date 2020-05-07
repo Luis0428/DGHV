@@ -2,22 +2,22 @@
     <string name="app_name">MenuDesplegable</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Mate Facil</string>
-    <string name="nav_header_subtitle">Curso Basico</string>
+    <string name="nav_header_title">Mate Fácil</string>
+    <string name="nav_header_subtitle">Curso Básico</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_info">Acerca de..</string>
     <string name="Bienvenida">Bienvenido</string>
-    <string name="InfoBienvenida">MATE FACIL se creó con la finalidad de ayudarte a resolver tus problemas de matemáticas de forma sencilla, en esta aplicación podrás ingresar los datos
+    <string name="InfoBienvenida">MATE FÁCIL se creó con la finalidad de ayudarte a resolver tus problemas de matemáticas de forma sencilla, en esta aplicación podrás ingresar los datos
     principales de tu ejercicio y rápidamente podrás ver la solución correcta.</string>
 
-    <string name="menu_home">Ecuaciones Cuadraticas</string>
+    <string name="menu_home">Ecuaciones Cuadráticas</string>
     <string name="menu_gallery">Ecuaciones Lineales</string>
-    <string name="menu_slideshow">Teorema de pitagoras</string>
+    <string name="menu_slideshow">Teorema de Pitágoras</string>
     <string name="menu_opcion_4">Distancia entre dos puntos</string>
-    <string name="menu_opcion_5">Combinacion y Permutación</string>
-    <string name="menu_opcion_6">Area y Perimetro (Rectangulo)</string>
-    <string name="menu_opcion_circulo">Area y Perímetro (Circulo)</string>
-    <string name="menu_opcion_rombo">Area y Perímetro (Rombo)</string>
+    <string name="menu_opcion_5">Combinación y Permutación</string>
+    <string name="menu_opcion_6">Área y Perímetro (Rectángulo)</string>
+    <string name="menu_opcion_circulo">Área y Perímetro (Circulo)</string>
+    <string name="menu_opcion_rombo">Área y Perímetro (Rombo)</string>
     <string name="menu_acerca_de">Acerca de</string>
 
     <string name="home_second">Home Second</string>
@@ -27,7 +27,7 @@
 
     <!--Fragment ecuaciones de segundo grado-->
     <string name="grad_titulo">Ecuaciones de segundo grado</string>
-    <string name="grad_expresion">Expresion general</string>
+    <string name="grad_expresion">Expresión general</string>
     <string name="grad_info">Se debe considerar que a debe ser diferente de 0.</string>
     <string name="grad_x1">x1: </string>
     <string name="grad_x2">x2: </string>
@@ -39,7 +39,7 @@
 
     <!--Ecuaciones lineales-->
     <string name="lin_titulo">Ecuaciones lineales 2x2</string>
-    <string name="lin_info">Los sistemas de ecuaciones lineales 2x2 son aquellas que se componen
+    <string name="lin_info">Los sistemas de ecuaciones lineales 2x2 son aquellos que se componen
     de dos ecuaciones con dos incógnitas.</string>
     <string name="lin_ecuacion">x + y = n</string>
     <string name="lin_x1">x +</string>
@@ -52,7 +52,7 @@
     <string name="pit_titulo">Teorema de Pitágoras</string>
     <string name="pit_info">La longitud de la hipótenusa es igual a la raíz cuadrada de la suma de los
     catetos al cuadrado.</string>
-    <string name="pit_marcar">Marca la casilla de la variable que desconoces</string>
+    <string name="pit_marcar">Selecciona la casilla de la variable que desconoces</string>
     <string name="pit_a">a</string>
     <string name="pit_b">b</string>
     <string name="pit_c">c</string>
@@ -70,8 +70,8 @@
 
     <!--Combinación y permutación-->
     <string name="comb_titulo">Combinación y Permutación</string>
-    <string name="comb_inf">Donde n es el número total de objetos. \nDonde r es el numero de objetos de la razón.</string>
-    <string name="comb_marcar">Marca la casilla del problema que deseas resolver</string>
+    <string name="comb_inf">Donde n es el número total de objetos \ny r es el numero de objetos de la razón.</string>
+    <string name="comb_marcar">Selecciona la casilla del problema que deseas resolver</string>
     <string name="comb_n">n</string>
     <string name="comb_r">r</string>
     <string name="comb_C">C</string>
@@ -98,7 +98,7 @@
     <string name="rombo_res_perimetro">Perímetro (cm):</string>
 
     <!--Área y perímetro (Circulo)-->
-    <string name="circ_titulo">Rectangulo</string>
+    <string name="circ_titulo">Rectángulo</string>
     <string name="circ_area">Área</string>
     <string name="circ_perimetro">Perímetro</string>
     <string name="circ_radio">Radio</string>
@@ -108,14 +108,14 @@
     <string name="txt_ciruculo">Circulo</string>
     <!--Texto del Centro de ayuda-->
     <string name="Titulo_Ayuda">Centro de ayuda</string>
-    <string name="correo_cliente">Introduce tu correo personal</string>
-    <string name="Mensaje_titulo">Escribe tu duda sobre el tema</string>
+    <string name="correo_cliente">Introduce tu correo personal:</string>
+    <string name="Mensaje_titulo">Escribe la duda que tengas:</string>
     <string name="Mensaje_hint">Escribe en este apartado</string>
     <string name="btn_enviarCorreo">Enviar</string>
     <string name="btn_LimpiarMensaje">Limpiar</string>
 
     <!--Acerca de-->
-    <string name="acerca_titulo">MATE FACIL</string>
+    <string name="acerca_titulo">MATE FÁCIL</string>
     <string name="acerca_info">Versión 1.0.0\nDesarrollado por: DGHV</string>
     <string name="acerca_contacto">Contacto: </string>
     <string name="acerca_correo">dghv@gmail.com</string>
