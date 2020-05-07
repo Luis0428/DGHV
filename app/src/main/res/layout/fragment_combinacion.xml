@@ -5,30 +5,21 @@
     android:id="@+id/frameLayout6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#93C572"
-    tools:context=".combinacion" >
-
-    <TextView
-        android:id="@+id/textView35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/comb_titulo"
-        android:textColor="#365F91"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@drawable/fondo_fragment"
+    tools:context=".combinacion">
 
     <TextView
         android:id="@+id/comb_tvRes"
         android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/tv_personalizado"
-        android:textColor="#FFF"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorTvPrincipal"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/comb_tvSalida" />
@@ -41,10 +32,12 @@
         android:layout_marginTop="6dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:inputType="numberSigned"
+        android:inputType="number"
+        android:nextFocusDown="@id/comb_et_rC"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textColor="@color/colorTvPrincipal"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/radioGroup2"
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
@@ -57,10 +50,12 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:inputType="numberSigned"
+        android:inputType="number"
+        android:nextFocusDown="@id/comb_et_rP"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textColor="@color/colorTvPrincipal"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/radioGroup2"
         app:layout_constraintTop_toBottomOf="@+id/comb_et_nC" />
@@ -73,10 +68,11 @@
         android:layout_marginTop="6dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:inputType="numberSigned"
+        android:inputType="number"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textColor="@color/colorTvPrincipal"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/textView48"
         app:layout_constraintTop_toBottomOf="@+id/textView50" />
@@ -89,10 +85,11 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/et_personalizado"
         android:ems="10"
-        android:inputType="numberSigned"
+        android:inputType="number"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textColor="@color/colorTvPrincipal"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/textView51"
         app:layout_constraintTop_toBottomOf="@+id/comb_et_rC" />
@@ -105,7 +102,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_personalizado"
         android:text="@string/btn_resolver"
-        android:textColor="#fff"
+        android:textColor="@color/colorTextoBoton"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/comb_tvRes" />
@@ -118,7 +115,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_personalizado"
         android:text="@string/btn_limpiar"
-        android:textColor="#fff"
+        android:textColor="@color/colorTextoBoton"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/comb_btnResolver"
         app:layout_constraintTop_toBottomOf="@+id/comb_tvRes" />
@@ -129,11 +126,11 @@
         android:layout_height="75dp"
         android:layout_marginTop="8dp"
         android:text="@string/comb_inf"
-        android:textColor="#000"
+        android:textColor="@color/colorTexto"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView38"
@@ -141,7 +138,7 @@
         android:layout_height="49dp"
         android:layout_marginTop="8dp"
         android:text="@string/comb_marcar"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -153,7 +150,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
         android:text="@string/comb_n"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView38" />
@@ -164,7 +161,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:text="@string/comb_r"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/textView47"
         app:layout_constraintTop_toBottomOf="@+id/textView38" />
@@ -176,7 +173,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="@string/comb_res"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView51" />
@@ -188,7 +185,7 @@
         android:layout_marginStart="22dp"
         android:layout_marginTop="49dp"
         android:text="@string/comb_C"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="36sp"
         app:layout_constraintStart_toEndOf="@+id/comb_et_nC"
         app:layout_constraintTop_toBottomOf="@+id/textView38" />
@@ -200,7 +197,7 @@
         android:layout_marginStart="22dp"
         android:layout_marginTop="12dp"
         android:text="@string/comb_P"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="36sp"
         app:layout_constraintStart_toEndOf="@+id/comb_et_nP"
         app:layout_constraintTop_toBottomOf="@+id/textView48" />
@@ -217,11 +214,14 @@
         <RadioButton
             android:id="@+id/comb_rbComb"
             android:layout_width="match_parent"
-            android:layout_height="58dp" />
+            android:layout_height="58dp"
+            android:buttonTint="@color/colorRadioButton"
+            android:checked="true" />
 
         <RadioButton
             android:id="@+id/comb_rbPer"
             android:layout_width="match_parent"
-            android:layout_height="54dp" />
+            android:layout_height="54dp"
+            android:buttonTint="@color/colorRadioButton" />
     </RadioGroup>
 </android.support.constraint.ConstraintLayout>

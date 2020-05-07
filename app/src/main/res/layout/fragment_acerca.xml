@@ -5,17 +5,17 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#93C572"
-    tools:context=".acerca" >
+    android:background="@drawable/fondo_fragment"
+    tools:context=".acerca">
 
     <TextView
         android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="@string/acerca_info"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView41" />
@@ -25,9 +25,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:text="@string/acerca_contacto"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -37,10 +37,10 @@
         android:layout_width="130dp"
         android:layout_height="64dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:text="@string/acerca_valora"
-        android:textColor="#365F91"
-        android:textSize="24sp"
+        android:textColor="@color/colorEtiqueta"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
@@ -49,10 +49,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:text="@string/acerca_titulo"
-        android:textColor="#365F91"
-        android:textSize="24sp"
+        android:textColor="@color/colorTexto"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,7 +60,7 @@
         android:id="@+id/imageView6"
         android:layout_width="263dp"
         android:layout_height="246dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,9 +71,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:text="@string/acerca_correo"
-        android:textColor="#000"
+        android:textColor="@color/colorTexto"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView34"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />

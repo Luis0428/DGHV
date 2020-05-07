@@ -7,8 +7,8 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_info">Acerca de..</string>
     <string name="Bienvenida">Bienvenido</string>
-    <string name="InfoBienvenida">MATE FACIL se creo con la finalidad de ayudar a resolver tus problemas de matemáticas de una forma sencilla, en esta aplicación podras ingresar los datos
-    principales del problema y de forma sencilla y rápida prodrás ver la respuesta a tu problema.</string>
+    <string name="InfoBienvenida">MATE FACIL se creó con la finalidad de ayudarte a resolver tus problemas de matemáticas de forma sencilla, en esta aplicación podrás ingresar los datos
+    principales de tu ejercicio y rápidamente podrás ver la solución correcta.</string>
 
     <string name="menu_home">Ecuaciones Cuadraticas</string>
     <string name="menu_gallery">Ecuaciones Lineales</string>
@@ -45,8 +45,8 @@
     <string name="lin_x1">x +</string>
     <string name="lin_y1">y</string>
     <string name="lin_igual">=</string>
-    <string name="lin_x">x = </string>
-    <string name="lin_y">y = </string>
+    <string name="lin_x">x =</string>
+    <string name="lin_y">y =</string>
 
     <!--Teorema de pitagoras-->
     <string name="pit_titulo">Teorema de Pitágoras</string>

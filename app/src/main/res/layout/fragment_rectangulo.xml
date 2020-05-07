@@ -5,39 +5,28 @@
     android:id="@+id/frameLayout8"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#93C572"
-    tools:context=".rectangulo" >
-
-    <TextView
-        android:id="@+id/textView39"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/rect_titulo"
-        android:textColor="#365F91"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@drawable/fondo_fragment"
+    tools:context=".rectangulo">
 
     <TextView
         android:id="@+id/textView40"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
         android:text="@string/rect_area"
-        android:textColor="#000"
-        android:textSize="22sp"
+        android:textColor="@color/colorTexto"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rect_form_area"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +39,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="@string/rect_res_area"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText21" />
@@ -62,7 +51,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="6dp"
         android:text="@string/rect_res_perimetro"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
@@ -70,26 +59,32 @@
     <TextView
         android:id="@+id/textView32"
         android:layout_width="200dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        android:textAlignment="center"
+        android:layout_marginTop="18dp"
         android:background="@drawable/tv_personalizado"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorTvPrincipal"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView54" />
 
     <TextView
         android:id="@+id/textView56"
         android:layout_width="200dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        android:textAlignment="center"
         android:background="@drawable/tv_personalizado"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorTvPrincipal"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
@@ -103,10 +98,12 @@
         android:ems="10"
         android:hint="@string/rect_lado1"
         android:inputType="numberDecimal"
+        android:nextFocusDown="@id/editText21"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:textColor="#fff"
-        android:textColorHint="#95B3D7"
+        android:textAlignment="center"
+        android:textColor="@color/colorTvPrincipal"
+        android:textColorHint="@color/colorTvSecundario"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView36" />
@@ -123,8 +120,9 @@
         android:inputType="numberDecimal"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:textColor="#fff"
-        android:textColorHint="#95B3D7"
+        android:textAlignment="center"
+        android:textColor="@color/colorTvPrincipal"
+        android:textColorHint="@color/colorTvSecundario"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
@@ -134,26 +132,26 @@
         android:layout_width="112dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/btn_personalizado"
         android:text="@string/btn_limpiar"
-        android:textColor="#fff"
+        android:textColor="@color/colorTextoBoton"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView56"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="112dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="18dp"
         android:background="@drawable/btn_personalizado"
         android:text="@string/btn_resolver"
-        android:textColor="#fff"
+        android:textColor="@color/colorTextoBoton"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView32"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
 
     <ImageView
         android:id="@+id/imageView5"

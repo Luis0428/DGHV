@@ -1,6 +1,7 @@
 package com.example.menudesplegable;
 
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,23 +49,27 @@ public class pitagoras extends Fragment
                         {
                             valor1 = Float.parseFloat(etB.getText().toString());
                             valor2 = Float.parseFloat(etC.getText().toString());
+                            if (validarCateto(valor1, valor2))
+                            {
+                                tmp = (float) (Math.pow(valor2, 2) - Math.pow(valor1, 2));
+                                res = (float) Math.sqrt(tmp);
 
-                            tmp = (float) (Math.pow(valor2, 2) - Math.pow(valor1, 2));
-                            res = (float) Math.sqrt(tmp);
-
-                            tvSalida.setText("a:");
-                            tvRes.setText(String.valueOf(res));
+                                tvSalida.setText("a:");
+                                tvRes.setText(String.valueOf(res));
+                            }
                         }
                         else if(rbB.isChecked())
                         {
                             valor1 = Float.parseFloat(etA.getText().toString());
                             valor2 = Float.parseFloat(etC.getText().toString());
+                            if(validarCateto(valor1, valor2))
+                            {
+                                tmp = (float) (Math.pow(valor2, 2) - Math.pow(valor1, 2));
+                                res = (float) Math.sqrt(tmp);
 
-                            tmp = (float) (Math.pow(valor2, 2) - Math.pow(valor1, 2));
-                            res = (float) Math.sqrt(tmp);
-
-                            tvSalida.setText("b:");
-                            tvRes.setText(String.valueOf(res));
+                                tvSalida.setText("b:");
+                                tvRes.setText(String.valueOf(res));
+                            }
                         }
                         else if(rbC.isChecked())
                         {
@@ -113,5 +118,16 @@ public class pitagoras extends Fragment
 
         if(c.equals(""))
             etC.setText("0");
+    }
+
+    private boolean validarCateto(float cateto, float hipotenusa)
+    {
+        if(cateto > hipotenusa)
+        {
+            Snackbar.make(getView(),"El valor de la hiótenusa debe ser mayor que la del cateto", Snackbar.LENGTH_LONG).show();
+            return false;
+        }
+        else
+            return true;
     }
 }

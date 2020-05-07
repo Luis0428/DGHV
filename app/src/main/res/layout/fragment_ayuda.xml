@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#93C572">
+    android:background="@drawable/fondo_fragment">
 
     <TextView
         android:id="@+id/textView18"
@@ -13,9 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="4dp"
         android:text="@string/Titulo_Ayuda"
-        android:textColor="#365F91"
+        android:textColor="@color/colorTexto"
         android:textSize="30sp" />
 
     <android.support.design.widget.FloatingActionButton
@@ -35,9 +34,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView18"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:text="@string/correo_cliente"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="20sp" />
 
     <TextView
@@ -46,62 +45,72 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/Correo_Cliente"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:text="@string/Mensaje_titulo"
-        android:textColor="#365F91"
+        android:textColor="@color/colorEtiqueta"
         android:textSize="20sp" />
 
     <EditText
         android:id="@+id/Correo_Cliente"
         android:layout_width="328dp"
-        android:layout_height="38dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/textView25"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="8dp"
         android:autofillHints=""
-        android:background="@drawable/borde_redondo"
+        android:background="@drawable/et_personalizado"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
-        android:textColor="#fff"
+        android:textColor="@color/colorTvPrincipal"
+        android:textColorHint="@color/colorTvSecundario"
         android:textSize="18sp" />
 
     <EditText
         android:id="@+id/Mensaje_Ayuda"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="366dp"
+        android:layout_height="271dp"
         android:layout_below="@+id/textView26"
-        android:layout_marginTop="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="22dp"
         android:autofillHints=""
-        android:background="@drawable/borde_redondo"
+        android:background="@drawable/et_personalizado"
         android:ems="10"
         android:hint="@string/Mensaje_hint"
         android:inputType="textMultiLine"
         android:lines="10"
         android:textAlignment="gravity"
+        android:textColor="@color/colorTvPrincipal"
+        android:textColorHint="@color/colorTvSecundario"
         android:textSize="16sp" />
 
     <Button
         android:id="@+id/btn_EnviarCorreo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/Mensaje_Ayuda"
         android:layout_alignParentStart="true"
         android:layout_marginStart="35dp"
         android:layout_marginTop="14dp"
         android:background="@drawable/btn_personalizado"
         android:text="@string/btn_enviarCorreo"
-        android:textColor="#fff" />
+        android:textColor="@color/colorTextoBoton"
+        android:textSize="18sp" />
+
     <Button
         android:id="@+id/btn_LimpiarMensaje"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/Mensaje_Ayuda"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="40dp"
-        android:text="@string/btn_limpiar"
         android:background="@drawable/btn_personalizado"
-        android:textColor="#fff"/>
+        android:text="@string/btn_limpiar"
+        android:textColor="@color/colorTextoBoton"
+        android:textSize="18sp" />
 
 </RelativeLayout>

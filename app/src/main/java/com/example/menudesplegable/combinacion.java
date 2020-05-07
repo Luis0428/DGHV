@@ -1,6 +1,7 @@
 package com.example.menudesplegable;
 
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,27 +43,56 @@ public class combinacion extends Fragment
                     public void onClick(View v)
                     {
                         int n, r, res;
-                        validarEntradas();
-
-                        if(rbComb.isChecked())
+                        if(validarEntradas())
                         {
-                            n = Integer.parseInt(et_nC.getText().toString());
-                            r = Integer.parseInt(et_rC.getText().toString());
-                            et_nP.setText("");
-                            et_rP.setText("");
-                            res = factorial(n) / (factorial(n - r) * factorial(r));
-                            tvSalida.setText("El número de combinaciones es: ");
-                            tvResultado.setText(String.valueOf(res));
-                        }
-                        else  if(rbPer.isChecked())
-                        {
-                            n = Integer.parseInt(et_nP.getText().toString());
-                            r = Integer.parseInt(et_rP.getText().toString());
-                            et_nC.setText("");
-                            et_rC.setText("");
-                            res = factorial(n) / factorial(n - r);
-                            tvSalida.setText("El número de permutaciones es: ");
-                            tvResultado.setText(String.valueOf(res));
+                            if(rbComb.isChecked())
+                            {
+                                n = Integer.parseInt(et_nC.getText().toString());
+                                r = Integer.parseInt(et_rC.getText().toString());
+                                switch (comprobarDatos(n, r))
+                                {
+                                    case 0:
+                                        et_nP.setText("");
+                                        et_rP.setText("");
+                                        res = factorial(n) / (factorial(n - r) * factorial(r));
+                                        tvSalida.setText("El número de combinaciones es: ");
+                                        tvResultado.setText(String.valueOf(res));
+                                        break;
+                                    case 1:
+                                        Snackbar.make(getView(),"n debe de ser mayor o igual que r.", Snackbar.LENGTH_LONG).show();
+                                        break;
+                                    case 2:
+                                        Snackbar.make(getView(),"n debe ser un número positivo.", Snackbar.LENGTH_LONG).show();
+                                        break;
+                                    case 3:
+                                        Snackbar.make(getView(),"r debe ser un número positivo.", Snackbar.LENGTH_LONG).show();
+                                        break;
+                                }
+                            }
+                            else  if(rbPer.isChecked())
+                            {
+                                n = Integer.parseInt(et_nP.getText().toString());
+                                r = Integer.parseInt(et_rP.getText().toString());
+                                switch (comprobarDatos(n, r))
+                                {
+                                    case 0:
+                                        et_nC.setText("");
+                                        et_rC.setText("");
+                                        res = factorial(n) / factorial(n - r);
+                                        tvSalida.setText("El número de permutaciones es: ");
+                                        tvResultado.setText(String.valueOf(res));
+                                        break;
+                                    case 1:
+                                        Snackbar.make(getView(),"n debe de ser mayor o igual que r.", Snackbar.LENGTH_LONG).show();
+                                        break;
+                                    case 2:
+                                        Snackbar.make(getView(),"n debe ser un número positivo.", Snackbar.LENGTH_LONG).show();
+                                        break;
+                                    case 3:
+                                        Snackbar.make(getView(),"r debe ser un número positivo.", Snackbar.LENGTH_LONG).show();
+                                        break;
+                                }
+                            }
                         }
                     }
                 }
@@ -87,16 +117,47 @@ public class combinacion extends Fragment
         return vista;
     }
 
-    private void validarEntradas()
+    private boolean validarEntradas()
     {
-        if(et_nC.getText().toString().equals(""))
-            et_nC.setText("0");
-        if(et_rC.getText().toString().equals(""))
-            et_rC.setText("0");
-        if(et_nP.getText().toString().equals(""))
-            et_nP.setText("0");
-        if(et_rP.getText().toString().equals(""))
-            et_rP.setText("0");
+        if(rbComb.isChecked())
+        {
+            if(et_nC.getText().toString().equals(""))
+            {
+                Snackbar.make(getView(),"No se ha ingresado n.", Snackbar.LENGTH_LONG).show();
+                return false;
+            }
+            if(et_rC.getText().toString().equals(""))
+            {
+                Snackbar.make(getView(),"No se ha ingresado r.", Snackbar.LENGTH_LONG).show();
+                return false;
+            }
+        }
+        else
+        {
+            if(et_nP.getText().toString().equals(""))
+            {
+                Snackbar.make(getView(),"No se ha ingresado n.", Snackbar.LENGTH_LONG).show();
+                return false;
+            }
+            if(et_rP.getText().toString().equals(""))
+            {
+                {
+                    Snackbar.make(getView(),"No se ha ingresado n.", Snackbar.LENGTH_LONG).show();
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    private int comprobarDatos(int n, int r)
+    {
+        if (n < r) return 1;
+        if (n < 0) return 2;
+        if (r < 0) return 3;
+
+        return 0;
     }
 
     private int factorial(int a)
